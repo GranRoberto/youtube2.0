@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navboton {
+  padding: 8px 8px;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navboton .perfil{
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.navboton:hover {
+  background-color: #ccc;
+}
+
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+#search-box {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+#search-button {
+  padding: 10px 20px;
+  background-color: #e4e4e4;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
