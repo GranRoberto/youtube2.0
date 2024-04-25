@@ -3,7 +3,36 @@
   padding: 0;
 }
 
+nav .fila-completa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 15px 10px;
+}
+
+.seccion-uno{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.seccion-dos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.seccion-tres{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
 .navboton {
+  display: flex;
   padding: 8px 8px;
   border: none;
   border-radius: 50%;
@@ -12,12 +41,16 @@
   transition: background-color 0.3s ease;
 }
 
-.navboton .perfil{
+.logo {
+border-color: none;
+}
+
+.perfil{
+  display: flex;
   border: none;
   border-radius: 50%;
   text-align: center;
   cursor: pointer;
-  padding: 0;
 }
 
 .navboton:hover {
@@ -27,10 +60,10 @@
 .search-bar-container {
   display: flex;
   align-items: center;
-  width: 500px;
-  margin: 20px auto;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  height: 40px;
+  width: 600px;
+  border: 1px solid #b6b6b6;
+  border-radius: 50px;
   overflow: hidden;
 }
 
@@ -48,4 +81,32 @@
   color: white;
   border: none;
   cursor: pointer;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  nav {
+    
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  nav {
+  
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  nav {
+
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  nav {
+
+  }
 }
