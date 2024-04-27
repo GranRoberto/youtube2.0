@@ -3,32 +3,18 @@
   padding: 0;
 }
 
-nav .fila-completa {
+nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 8px 15px 10px;
 }
 
-.seccion-uno{
+nav div {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
-}
-
-.seccion-dos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-}
-
-.seccion-tres{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
+  gap: 12px;
 }
 
 .navboton {
@@ -41,8 +27,28 @@ nav .fila-completa {
   transition: background-color 0.3s ease;
 }
 
+.microfono2 {
+  display: none;
+  padding: 8px 8px;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
 .logo {
 border-color: none;
+}
+
+.lupa {
+  display: flex;
+  padding: 8px 8px;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .perfil{
@@ -88,6 +94,25 @@ border-color: none;
   .search-bar-container {
     display: none;
   }
+
+  .lupa {
+    display: flex;
+  }
+
+  nav {
+    display: flex;
+    justify-content: baseline;
+  }
+
+  .seccion-uno {
+    display: flex;
+    justify-content: left;
+  }
+
+  .seccion-dos .seccion-tres {
+    display: flex;
+    justify-content: right;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -95,11 +120,24 @@ border-color: none;
   .search-bar-container {
     display: none;
   }
+
+  .lupa {
+    display: flex;
+  }
+
+  .seccion-dos .seccion-tres {
+    display: flex;
+    justify-content: right;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .search-bar-container {
+    display: flex;
+  }
+
+  .lupa {
     display: flex;
   }
 }
@@ -109,11 +147,19 @@ border-color: none;
   .search-bar-container {
     display: flex;
   }
+
+  .lupa {
+    display: none;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .search-bar-container {
     display: flex;
+  }
+
+  .lupa {
+    display: none;
   }
 }
