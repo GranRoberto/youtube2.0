@@ -117,6 +117,7 @@ header {
   margin-left: 4px;
   gap: 5px;
   background-color: white;
+  text-overflow: clip;
 }
 
 .barra-lateral button:hover {
@@ -128,16 +129,15 @@ header {
   display: flex;
   gap: 10px;
   margin-top: 10px;
-
-  left: 7%;
 }
 
 .fila-dos button {
+  display: flex;
   border: none;
   padding: 8px 12px;
   border-radius: 10px;
   cursor: pointer;
-
+  flex-wrap: nowrap;
 }
 
 .a {
