@@ -114,12 +114,57 @@ header {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  margin-left: 4px;
   gap: 5px;
   background-color: white;
 }
 
 .barra-lateral button:hover {
+  background-color: #e2e2e2;
+  border-radius: 15px;
+}
+
+.fila-dos {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+
+  left: 7%;
+}
+
+.fila-dos button {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+
+.a {
+  background-color: black;
+  color: white;
+}
+
+.b {
+  color: rgb(71, 71, 71);
+}
+
+.c {
+  padding: 8px 8px;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  background-color: white;
+}
+
+.b:hover {
   background-color: #ccc;
+}
+
+.c:hover {
+  background-color: #ccc;
+  border-radius: 50%;
 }
 
 /*RESPONSIVE*/
@@ -151,8 +196,13 @@ header {
     gap: 4px;
   }
 
-  .barra-lateral button{
+  .barra-lateral button {
     display: none;
+  }
+
+  .fila-dos {
+    display: unset;
+    left: 0%;
   }
 }
 
