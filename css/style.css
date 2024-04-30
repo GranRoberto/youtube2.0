@@ -103,6 +103,11 @@ header {
   align-content: center;
 }
 
+.barra-lateral {
+  display: flex;
+  flex-direction: column;
+}
+
 .barra-lateral button {
   display: flex;
   flex-direction: column;
@@ -134,6 +139,7 @@ header {
   overflow-x: hidden;
   overflow-wrap: normal;
   z-index: 10;
+  left: 90px;
   flex-wrap: wrap;
   justify-content: baseline;
 }
@@ -203,7 +209,7 @@ header {
     gap: 4px;
   }
 
-  .barra-lateral {
+  .barra-lateral button {
     display: none;
   }
 
@@ -224,7 +230,7 @@ header {
     display: flex;
   }
 
-  .barra-lateral {
+  .barra-lateral button {
     display: none;
   }
 }
@@ -241,7 +247,6 @@ header {
 
   .barra-lateral button {
     display: flex;
-    flex-direction: column;
   }
 }
 
@@ -255,10 +260,6 @@ header {
     display: none;
   }
 
-  .barra-lateral button {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
