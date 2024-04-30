@@ -97,7 +97,7 @@ nav div {
 /*barra lateral*/
 header {
   display: grid;
-  grid-template-columns: 5% 95%;
+  grid-template-columns: 8% 92%;
   justify-items: center;
   align-content: center;
 }
@@ -127,8 +127,11 @@ header {
 
 .fila-dos {
   display: flex;
+  flex-direction: row;
   gap: 10px;
   margin-top: 10px;
+  overflow-x: hidden;
+  overflow-wrap: normal;
 }
 
 .fila-dos button {
@@ -137,7 +140,6 @@ header {
   padding: 8px 12px;
   border-radius: 10px;
   cursor: pointer;
-  flex-wrap: nowrap;
 }
 
 .a {
