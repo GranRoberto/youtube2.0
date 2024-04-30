@@ -4,7 +4,7 @@
 }
 
 /* barra nav*/
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,6 +20,7 @@ nav div {
 
 .logo {
   border: none;
+  background-color: white;
 }
 
 .navboton {
@@ -34,64 +35,64 @@ nav div {
 }
 
 .microfono2 {
-    display: none;
-    padding: 8px 8px;
-    border: none;
-    border-radius: 50%;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  display: none;
+  padding: 8px 8px;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .lupa {
-    display: flex;
-    padding: 8px 8px;
-    border: none;
-    border-radius: 50%;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  display: flex;
+  padding: 8px 8px;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.perfil{
-    display: flex;
-    border: none;
-    border-radius: 50%;
-    text-align: center;
-    cursor: pointer;
+.perfil {
+  display: flex;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
 }
 
 .navboton:hover {
-    background-color: #ccc;
+  background-color: #ccc;
 }
 
 .search-bar-container {
-    display: flex;
-    align-items: center;
-    height: 40px;
-    width: 600px;
-    border: 1px solid #b6b6b6;
-    border-radius: 50px;
-    overflow: hidden;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 600px;
+  border: 1px solid #b6b6b6;
+  border-radius: 50px;
+  overflow: hidden;
 }
 
 #search-box {
-    flex: 1;
-    padding: 10px;
-    border: none;
-    outline: none;
-    font-size: 16px;
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
 }
 
 .search-button {
-    padding: 10px 20px;
-    background-color: #e4e4e4;
-    border: none;
-    cursor: pointer;
+  padding: 10px 20px;
+  background-color: #e4e4e4;
+  border: none;
+  cursor: pointer;
 }
 
 .buscador {
-    background-color: #e4e4e4
+  background-color: #e4e4e4;
 }
 
 /*barra lateral*/
@@ -132,6 +133,9 @@ header {
   margin-top: 10px;
   overflow-x: hidden;
   overflow-wrap: normal;
+  z-index: 10;
+  flex-wrap: wrap;
+  justify-content: baseline;
 }
 
 .fila-dos button {
@@ -149,6 +153,7 @@ header {
 
 .b {
   color: rgb(71, 71, 71);
+  white-space: nowrap;
 }
 
 .c {
@@ -198,12 +203,13 @@ header {
     gap: 4px;
   }
 
-  .barra-lateral button {
+  .barra-lateral {
     display: none;
   }
 
   .fila-dos {
-    display: unset;
+    display: flex;
+    flex-direction: row;
     left: 0%;
   }
 }
@@ -218,7 +224,7 @@ header {
     display: flex;
   }
 
-  .barra-lateral button{
+  .barra-lateral {
     display: none;
   }
 }
@@ -233,8 +239,9 @@ header {
     display: none;
   }
 
-  .barra-lateral button{
+  .barra-lateral button {
     display: flex;
+    flex-direction: column;
   }
 }
 
@@ -248,6 +255,10 @@ header {
     display: none;
   }
 
+  .barra-lateral button {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -259,5 +270,4 @@ header {
   .lupa {
     display: none;
   }
-
 }
