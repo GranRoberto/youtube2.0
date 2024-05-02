@@ -52,6 +52,7 @@ nav div {
   text-align: center;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  background-color: white;
 }
 
 .perfil {
@@ -136,12 +137,6 @@ header {
   flex-direction: row;
   gap: 10px;
   margin-top: 10px;
-  overflow-x: hidden;
-  overflow-wrap: normal;
-  z-index: 10;
-  left: 90px;
-  flex-wrap: wrap;
-  justify-content: baseline;
 }
 
 .fila-dos button {
@@ -150,6 +145,9 @@ header {
   padding: 8px 12px;
   border-radius: 10px;
   cursor: pointer;
+  overflow-x: hidden;
+  overflow-wrap: normal;
+  flex-wrap: nowrap;
 }
 
 .a {
@@ -209,15 +207,15 @@ header {
     gap: 4px;
   }
 
+  header {
+    grid-template-columns: 100%;
+    margin-left: 15px;
+  }
+
   .barra-lateral button {
     display: none;
   }
 
-  .fila-dos {
-    display: flex;
-    flex-direction: row;
-    left: 0%;
-  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -228,6 +226,19 @@ header {
 
   .lupa {
     display: flex;
+  }
+
+  .microfono2 {
+    display: flex;
+  }
+
+  .microfono {
+    display: none;
+  }
+
+  header {
+    grid-template-columns: 100%;
+    margin-left: 15px;
   }
 
   .barra-lateral button {
@@ -243,6 +254,10 @@ header {
 
   .lupa {
     display: none;
+  }
+
+  header {
+    grid-template-columns: 8% 92%;
   }
 
   .barra-lateral button {
