@@ -99,13 +99,14 @@ nav div {
 /*barra lateral*/
 header {
   display: grid;
-  grid-template-columns: 70px auto;
+  grid-template-columns: minmax(80px, 1fr) 97%;
 }
 
 .barra-lateral {
   display: flex;
   flex-direction: column;
   justify-content: start;
+  align-items: center;
 }
 
 .barra-lateral button {
@@ -182,9 +183,60 @@ header {
 
 .contenido {
   display: grid;
-  grid-template-columns: repeat(3, 3fr);
-  justify-items: center;
-  align-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  gap: 15px;
+  padding: 5px;
+}
+
+.video-uno {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.video-uno img {
+  border-radius: 15px;
+}
+
+.texto-video {
+  display: grid;
+  grid-template-columns: minmax(40px, 1fr) 90%;
+  flex-direction: row;
+}
+
+.perfil-video {
+  border-radius: 100%;
+  padding: 3px;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-uno button {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: none;
+  text-decoration: none;
+  text-align: left;
+  padding: 5px;
+}
+.titulo-cancion {
+  max-width: 370px;
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.nombre-cancion{
+  max-height: 35px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
+
+.artistas {
+  font-size: 12px;
+  margin-top: 3px;
 }
 /*RESPONSIVE*/
 
@@ -265,7 +317,7 @@ header {
   }
 
   header {
-    grid-template-columns: 8% 92%;
+    grid-template-columns: minmax(80px, 1fr) 97%;
   }
 
   .barra-lateral button {
